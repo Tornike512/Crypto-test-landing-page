@@ -2,6 +2,156 @@
 @import "../root/colors";
 @import "../root/variables";
 
-.black {
-  background-color: blue;
+.hero-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  .meme-coins-section {
+    margin-right: 40px;
+
+    .hero-main-text {
+      font-size: $landing-font-size;
+    }
+
+    .hero-paragraph {
+      font-size: $main-font-size;
+    }
+
+    .count-wrapper {
+      display: flex;
+      margin-top: 24px;
+
+      .total-users-wrapper {
+        max-width: 318px;
+        width: 100%;
+        margin-right: 16px;
+        padding: 16px;
+        background-color: $secondary-background-color;
+        border-radius: $main-border-radius;
+
+        .total-users {
+          display: flex;
+          align-items: center;
+          margin-bottom: 12px;
+          font-size: $small-font-size;
+
+          img {
+            margin-right: 8px;
+          }
+        }
+
+        .users-count {
+          display: flex;
+          align-items: center;
+          position: relative;
+
+          .avatar-1,
+          .avatar-2,
+          .avatar-3 {
+            position: absolute;
+            top: 3px;
+            border-radius: 100%;
+            border: 2px solid rgba(10, 10, 10, 1);
+          }
+
+          .avatar-2 {
+            left: 13px;
+            z-index: 1;
+          }
+
+          .avatar-3 {
+            left: 26px;
+            z-index: 2;
+          }
+
+          p {
+            margin-left: 50px;
+            font-size: $main-font-size;
+          }
+        }
+      }
+
+      .trade-volume-wrapper {
+        max-width: 318px;
+        width: 100%;
+        padding: 16px;
+        background-color: $secondary-background-color;
+        border-radius: $main-border-radius;
+
+        .trade-volume {
+          display: flex;
+          align-items: center;
+          margin-bottom: 12px;
+          font-size: $small-font-size;
+
+          img {
+            margin-right: 8px;
+          }
+        }
+
+        .dollars-count {
+          font-size: $main-font-size;
+        }
+      }
+    }
+  }
+
+  .current-coin {
+    position: relative;
+    cursor: pointer;
+
+    .current-coin-image {
+      border-top-left-radius: $main-border-radius;
+      border-top-right-radius: $main-border-radius;
+    }
+
+    .approved-coin {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .coin-description {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px;
+      box-shadow: -1px 3px 11px rgba(0, 0, 0, 0.08);
+
+      .virtual {
+        h3 {
+          margin-bottom: 5px;
+          font-size: $main-font-size;
+        }
+
+        .price {
+          color: $secondary-text-color;
+          font-size: $small-font-size;
+        }
+
+        .exact-price {
+          color: $main-text-color;
+          font-size: $small-font-size;
+        }
+      }
+
+      .market-cap {
+        .market-percentage {
+          margin-bottom: 5px;
+          font-size: $main-font-size;
+          color: rgba(42, 192, 47, 1);
+        }
+
+        .market-cap-text {
+          color: $secondary-text-color;
+          font-size: $small-font-size;
+        }
+
+        .exact-market-cap {
+          color: $main-text-color;
+          font-size: $small-font-size;
+        }
+      }
+    }
+  }
 }
