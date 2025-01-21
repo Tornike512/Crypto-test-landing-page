@@ -1,0 +1,97 @@
+@import "../root/breakPoints";
+@import "../root/colors";
+@import "../root/variables";
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 20px;
+
+  .website-logo {
+    cursor: pointer;
+  }
+
+  .header-search-form {
+    position: relative;
+
+    .search-icon {
+      position: relative;
+      top: 3px;
+      left: 31px;
+      z-index: 1;
+    }
+
+    .header-search {
+      max-width: 350px;
+      width: 350px;
+      height: 40px;
+      padding: 0 50px 0 41px;
+      position: relative;
+      background-color: $secondary-background-color;
+      border: 1px solid rgba(229, 229, 229, 1);
+      border-radius: 100px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .header-search-button {
+      width: 30px;
+      display: flex;
+      position: absolute;
+      justify-content: space-between;
+      align-items: center;
+      top: 11px;
+      right: 15px;
+      background-color: rgba(245, 245, 245, 1);
+      border: 1px solid rgba(229, 229, 229, 1);
+      border-radius: $button-radius;
+      font-size: 10px;
+      transition: background-color 0.2s ease;
+      cursor: pointer;
+
+      & img {
+        margin-left: 4px;
+      }
+
+      & div {
+        margin-right: 4px;
+        color: #9b9b9b;
+      }
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.884);
+      }
+    }
+  }
+
+  .header-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+      margin-right: 8px;
+      cursor: pointer;
+    }
+
+    .start-buying-button {
+      padding: 16px 24px;
+      margin-left: 10px;
+      background-color: $main-button-color;
+      color: $button-text-color;
+      font-size: 16px;
+      border: none;
+      border-radius: $button-radius;
+      transition: background-color 0.2s ease;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgb(52 52 52);
+      }
+    }
+  }
+}

@@ -4,3 +4,14 @@
 
 @import "./sections/header";
 @import "./sections/footer";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: $primary-background-color;
+}

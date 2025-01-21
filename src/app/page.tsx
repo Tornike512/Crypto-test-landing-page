@@ -1,3 +1,11 @@
+import "@/styles/_global.scss";
+import Header from "@/components/sections/Header";
+
 export default function Home() {
-  return <div></div>;
+  return (
+    <>
+      <Header />
+      <main></main>;
+    </>
+  );
 }
