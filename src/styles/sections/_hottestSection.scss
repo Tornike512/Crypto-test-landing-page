@@ -15,5 +15,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 14px;
+
+    @include lg {
+      width: 100%;
+      overflow-x: auto;
+      white-space: nowrap;
+      overflow-y: hidden;
+    }
   }
 }

@@ -10,10 +10,11 @@
   flex-direction: column;
 
   .navigation {
+    display: flex;
     margin-bottom: 40px;
 
     .footer-nav {
-      margin-right: 30px;
+      margin-right: 10px;
       text-decoration: none;
       color: $secondary-text-color;
 

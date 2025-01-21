@@ -5,17 +5,42 @@
 .header {
   max-width: 1800px;
   width: 100%;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 26px 20px;
 
+  @include lg {
+    justify-content: space-between;
+  }
+
   .website-logo {
     cursor: pointer;
+
+    @include lg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+
+    @include lg {
+      display: flex;
+    }
   }
 
   .header-search-form {
     position: relative;
+
+    @include lg {
+      display: none;
+    }
 
     .search-icon {
       position: relative;
@@ -73,6 +98,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include lg {
+      display: none;
+    }
 
     & img {
       margin-right: 8px;

@@ -13,24 +13,12 @@ export default function Footer() {
   return (
     <footer className="footer">
       <nav className="navigation">
-        <Link className="footer-nav" href="#">
-          About
-        </Link>
-        <Link className="footer-nav" href="#">
-          Blog
-        </Link>
-        <Link className="footer-nav" href="#">
-          Jobs
-        </Link>
-        <Link className="footer-nav" href="#">
-          Press
-        </Link>
-        <Link className="footer-nav" href="#">
-          accessibility
-        </Link>
-        <Link className="footer-nav" href="#">
-          Partners
-        </Link>
+        <div className="footer-nav">About</div>
+        <div className="footer-nav">Blog</div>
+        <div className="footer-nav">Jobs</div>
+        <div className="footer-nav">Press</div>
+        <div className="footer-nav">accessibility</div>
+        <div className="footer-nav">Partners</div>
       </nav>
       <div className="socials">
         <Image src={facebookLogo} alt="Facebook Logo" />

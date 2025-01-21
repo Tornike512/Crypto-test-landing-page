@@ -1,3 +1,5 @@
+"use client";
+
 import { cardInfo } from "@/data/cardInfo";
 
 import Card from "../basicUi/Card";

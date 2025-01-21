@@ -8,20 +8,43 @@
   display: flex;
   justify-content: space-between;
 
+  @include lg {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
   .meme-coins-section {
     margin-right: 40px;
 
+    @include lg {
+      margin-right: 0;
+    }
+
     .hero-main-text {
       font-size: $landing-font-size;
+
+      @include lg {
+        font-size: 40px;
+      }
     }
 
     .hero-paragraph {
       font-size: $main-font-size;
+
+      @include lg {
+        font-size: $small-font-size;
+      }
     }
 
     .count-wrapper {
       display: flex;
       margin-top: 24px;
+
+      @include lg {
+        display: none;
+      }
 
       .total-users-wrapper {
         max-width: 318px;
@@ -101,6 +124,10 @@
   .current-coin {
     position: relative;
     cursor: pointer;
+
+    @include lg {
+      margin-top: 29px;
+    }
 
     .current-coin-image {
       border-top-left-radius: $main-border-radius;

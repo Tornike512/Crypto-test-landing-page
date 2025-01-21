@@ -7,6 +7,7 @@ import searchButtonIcon from "../../../public/images/search-button-icon.png";
 import twitterLogo from "../../../public/images/twitter-logo.png";
 import telegramLogo from "../../../public/images/telegram-logo.png";
 import monitorIcon from "../../../public/images/monitor-icon.png";
+import menuIcon from "../../../public/images/menu-icon.png";
 
 import "@/styles/sections/_header.scss";
 
@@ -18,6 +19,7 @@ export default function Header() {
   return (
     <header className="header">
       <Image className="website-logo" src={mainLogo} alt="Website Logo" />
+      <Image className="menu-icon" src={menuIcon} alt="Menu Icon" />
       <form onSubmit={handleForm} className="header-search-form">
         <Image className="search-icon" src={searchIcon} alt="Search Icon" />
         <input
