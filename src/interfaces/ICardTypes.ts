@@ -1,5 +1,5 @@
 export interface ICardTypes {
-  image: any;
+  image: string;
   name: string;
   percentage: string;
   price: string;

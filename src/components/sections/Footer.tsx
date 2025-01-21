@@ -5,7 +5,6 @@ import xLogo from "../../../public/images/x-logo.png";
 import youtubeLogo from "../../../public/images/youtube-logo.png";
 
 import Image from "next/image";
-import Link from "next/link";
 
 import "@/styles/sections/_footer.scss";
 

@@ -14,7 +14,7 @@ export default function HottestSection() {
         {cardInfo.map((card) => {
           return (
             <Card
-              image={card.image}
+              image={card.image.src}
               marketCap={card.marketCap}
               name={card.name}
               percentage={card.percentage}
