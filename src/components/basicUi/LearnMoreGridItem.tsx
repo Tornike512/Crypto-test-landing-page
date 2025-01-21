@@ -7,7 +7,7 @@ export default function LearnMoreGridItem({ about }: { about: string }) {
   return (
     <div className="learn-more-grid-item">
       <Image src={learnMoreImage} alt="Learn More Grid Item Image" />
-      <h3>{about}</h3>
+      <h3 className="about">{about}</h3>
     </div>
   );
 }

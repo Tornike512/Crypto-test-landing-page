@@ -1,0 +1,46 @@
+@import "../root/breakPoints";
+@import "../root/colors";
+@import "../root/variables";
+
+.footer {
+  max-width: 1800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .navigation {
+    margin-bottom: 40px;
+
+    .footer-nav {
+      margin-right: 30px;
+      text-decoration: none;
+      color: $secondary-text-color;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .socials {
+    margin-bottom: 40px;
+
+    & img {
+      width: 30px;
+      height: auto;
+      margin-right: 30px;
+      cursor: pointer;
+    }
+  }
+
+  .company {
+    margin-bottom: 40px;
+    font-size: $small-font-size;
+    color: $secondary-text-color;
+  }
+}

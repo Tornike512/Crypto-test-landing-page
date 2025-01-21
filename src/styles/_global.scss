@@ -11,10 +11,16 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("/public/fonts/NeueHaasUnica-Black.ttf");
+}
+
 body {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: $primary-background-color;
+  font-family: "MyCustomFont", sans-serif;
 }
