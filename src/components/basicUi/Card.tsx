@@ -16,7 +16,7 @@ export default function Card({
   direction,
 }: ICardTypes) {
   return (
-    <div className="current-coin">
+    <div className="current-coin-card">
       <Image className="current-coin-image" src={image} alt="Current Coin" />
       <div className="coin-description">
         <div className="virtual">

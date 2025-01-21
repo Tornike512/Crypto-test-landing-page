@@ -2,7 +2,7 @@
 @import "../root/colors";
 @import "../root/variables";
 
-.current-coin {
+.current-coin-card {
   position: relative;
   transition: transform 0.2s ease;
   cursor: pointer;
@@ -83,7 +83,7 @@
       }
 
       .neutral {
-        height: 18px;
+        height: 24px;
         background-color: #ffffff;
       }
     }

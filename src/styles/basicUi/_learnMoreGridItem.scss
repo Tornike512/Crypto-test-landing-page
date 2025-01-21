@@ -1,0 +1,35 @@
+@import "../root/breakPoints";
+@import "../root/colors";
+@import "../root/variables";
+
+.learn-more-grid-item {
+  width: 237px;
+  height: 84px;
+  position: relative;
+
+  & img {
+    object-fit: cover;
+    width: 237px;
+    height: 84px;
+    filter: brightness(65%);
+    transform: scale(1);
+    border-radius: $main-border-radius;
+    transition: filter 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(80%);
+      transform: scale(1.05);
+    }
+  }
+
+  & h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: rgba(255, 255, 255, 1);
+    white-space: nowrap;
+  }
+}
