@@ -1,0 +1,19 @@
+@import "../root/breakPoints";
+@import "../root/colors";
+@import "../root/variables";
+
+.hottest-section {
+  width: 100%;
+  margin-top: 68px;
+
+  .hottest-main-text {
+    font-size: $section-font-size;
+    margin-bottom: 14px;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 14px;
+  }
+}

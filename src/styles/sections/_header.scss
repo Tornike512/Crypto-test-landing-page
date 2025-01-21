@@ -3,6 +3,7 @@
 @import "../root/variables";
 
 .header {
+  max-width: 1800px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -90,7 +91,7 @@
       cursor: pointer;
 
       &:hover {
-        background-color: rgb(52 52 52);
+        background-color: $button-hover-color;
       }
     }
   }
