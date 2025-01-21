@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import mainLogo from "../../../public/images/main-logo.png";
 import searchIcon from "../../../public/images/search-icon.png";
@@ -9,10 +11,14 @@ import monitorIcon from "../../../public/images/monitor-icon.png";
 import "@/styles/sections/_header.scss";
 
 export default function Header() {
+  const handleForm = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+  };
+
   return (
     <header className="header">
       <Image className="website-logo" src={mainLogo} alt="Website Logo" />
-      <form className="header-search-form">
+      <form onSubmit={handleForm} className="header-search-form">
         <Image className="search-icon" src={searchIcon} alt="Search Icon" />
         <input
           className="header-search"
