@@ -17,7 +17,13 @@ export default function Card({
 }: ICardTypes) {
   return (
     <div className="current-coin-card">
-      <Image className="current-coin-image" src={image} alt="Current Coin" />
+      <Image
+        className="current-coin-image"
+        width={300}
+        height={500}
+        src={image}
+        alt="Current Coin"
+      />
       <div className="coin-description">
         <div className="virtual">
           <div className="name-wrapper">
